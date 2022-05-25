@@ -10,7 +10,7 @@ let tasks = [
 tasks.forEach(task => {
     container.innerHTML +=
     `<li>
-        ${task.title}}
+        ${task.title}
         <input 
         class='container-checkbox' 
         type='checkbox' 
