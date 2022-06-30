@@ -13,3 +13,30 @@ console.log('original: ', words);
 const rta = words.filter(item => item.length >= 6);
 console.log('rta: ', rta);
 console.log('original: ', words);
+
+const orders = [
+    {
+        customerName: 'Nicolas',
+        total: 60,
+        delivered: true
+    },
+    {
+        customerName: 'Julien',
+        total: 140,
+        delivered: false
+    },
+    {
+        customerName: 'Pierre',
+        total: 90,
+        delivered: true
+    },
+    {
+        customerName: "Valentina",
+        total: 240,
+        delivered: true,
+    },
+]
+
+const rta3 = orders.filter(item => item.delivered)
+
+console.log('rta3: ', rta3);
