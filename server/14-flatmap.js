@@ -38,8 +38,7 @@ const calendars = {
 };
 /*Reto: obtener el inicio de cada cita(startDate) en un array*/
 const rt3 = Object.values(calendars).flatMap(calendar => {
-  console.log('calendar', calendar);
-  return calendar.startDate;
+  return calendar.map(date => date.startDate);
 }
 );
 console.log('flatMap', rt3);
